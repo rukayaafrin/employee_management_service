@@ -9,7 +9,6 @@ To do:
 2. delete_employee.py
     - error handling for input value 
 3. update_employee.py
-    - allow updates for city and salary 
     - error handling for all user inputs
     
 

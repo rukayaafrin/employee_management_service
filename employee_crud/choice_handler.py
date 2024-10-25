@@ -1,4 +1,4 @@
-from formatting.ansi_colors import text_colours
+from utils.ansi_colors import text_colours
 from employee_crud.add_employee import add_employee
 from employee_crud.update_employee import update_employee
 from employee_crud.delete_employee import delete_employee

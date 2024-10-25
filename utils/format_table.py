@@ -1,4 +1,4 @@
-from formatting.ansi_colors import text_colours, background_colours, text_styles
+from utils.ansi_colors import text_colours, background_colours, text_styles
 
 def print_table_header(data):
     print('-'*77)

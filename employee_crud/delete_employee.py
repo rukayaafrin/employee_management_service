@@ -1,4 +1,4 @@
-from formatting.ansi_colors import text_colours
+from utils.ansi_colors import text_colours
 
 def delete_employee(employees):
     if len(employees) == 0: 
