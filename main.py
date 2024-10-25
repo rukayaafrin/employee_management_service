@@ -1,5 +1,5 @@
 from employee_crud.choice_handler import choice_handler
-from formatting.ansi_colors import text_colours, text_styles
+from utils.ansi_colors import text_colours, text_styles
 
 def main():
     choice = "" 
