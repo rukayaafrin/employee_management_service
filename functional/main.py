@@ -12,9 +12,10 @@ def main():
             print("2. Update Employee")
             print("3. Delete Employee")
             print("4. List All Employees")
-            print("5. Exit")
+            print("5. Show Employee by ID")     
+            print("6. Exit")
             choice = int(input("Enter your choice: "))
-            if choice == 5:
+            if choice == 6:
                 print(text_colours['GREEN'] + "Exit" + " 👋" + text_colours['RESET'])
                 break
             choice_handler(choice, employees)

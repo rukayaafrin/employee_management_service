@@ -12,19 +12,24 @@ def update_employee(employees):
                 new_name = input(f"Enter new name (leave blank to keep '{current_employee['name']}'): ")
                 new_age = input(f"Enter new age (leave blank to keep '{current_employee['age']}'): ")
                 new_department = input(f"Enter new department (leave blank to keep '{current_employee['department']}'): ")
-                new_city = input(f"Enter new city (leave blank to keep '{current_employee['city']}'): ")
                 new_salary = input(f"Enter new salary (leave blank to keep '{current_employee['salary']}'): ")
+                new_street = input(f"Enter new street (leave blank to keep '{current_employee['address']['street']}'): ")
+                new_city = input(f"Enter new city (leave blank to keep '{current_employee['address']['city']}'): ")
+                new_postalcode = input(f"Enter new postal code (leave blank to keep '{current_employee['address']['postalcode']}'): ")
                 if new_name:
                     current_employee['name'] = new_name
                 if new_age:
                     current_employee['age'] = new_age
                 if new_department:
                     current_employee['department'] = new_department
-                if new_city:
-                    current_employee['city'] = new_city
                 if new_salary:
                     current_employee['salary'] = new_salary
-
+                if new_street:
+                    current_employee['address']['street'] = new_street
+                if new_city:
+                    current_employee['address']['city'] = new_city
+                if new_postalcode:
+                    current_employee['address']['postalcode'] = new_postalcode
             print(text_colours['GREEN'] + f"Employee updated successfully: {current_employee}" + " ✅" + text_colours['RESET'])
             break
         else:

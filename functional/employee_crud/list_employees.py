@@ -1,4 +1,4 @@
-from utils.ansi_colors import text_colours, background_colours, text_styles
+from utils.ansi_colors import text_colours
 from utils.format_table import print_table_header, print_table_row
 
 def list_all_employees(employees):
