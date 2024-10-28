@@ -68,14 +68,13 @@ class EmployeeManager:
             print(text_colours['CYAN'] + "List All Employees" + " 📋" + text_colours['RESET'])
             for i, employee in enumerate(self.employees):
                 if i == 0:
-                    # Convert Employee object to dictionary
                     print_table_header(employee.__dict__)
                 print_table_row(employee.__dict__)
 
     def show_employee_by_id(self):
         id = input("Enter employee id: ")
         for employee in self.employees:
-            if employee.id == id:  # Use dot notation instead of dictionary access
+            if employee.id == id:  
                 print(f"The employee with the id {employee.id} is named {employee.name} "
                       f"and from department {employee.department} and earns {employee.salary}. "
                       f"The employee address is {dict_to_string(employee.address)}")
